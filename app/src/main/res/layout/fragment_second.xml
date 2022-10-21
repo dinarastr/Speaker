@@ -6,6 +6,7 @@
     tools:context=".second.SecondFragment">
 
     <TextView
+        android:id="@+id/secondTv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Арцём" />

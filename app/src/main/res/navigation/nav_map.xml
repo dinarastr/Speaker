@@ -24,6 +24,8 @@
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment2"
             app:destination="@id/thirdFragment" />
+
+        <argument android:name="info" app:argType="string"/>
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
