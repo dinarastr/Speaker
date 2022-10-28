@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
-import ru.dinarastepina.speaker.R
 import ru.dinarastepina.speaker.databinding.FragmentFirstBinding
 
 class FirstFragment : Fragment() {
@@ -20,7 +19,7 @@ class FirstFragment : Fragment() {
         // Inflate the layout for this fragment
         vb = FragmentFirstBinding.inflate(layoutInflater, container, false)
 
-        vb.face.setOnClickListener {
+        vb.familyBtn.setOnClickListener {
             val action = FirstFragmentDirections.firstToSecond("семья")
             vb.root.findNavController().navigate(action)
         }
