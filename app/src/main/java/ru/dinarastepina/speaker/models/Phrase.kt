@@ -4,5 +4,6 @@ data class Phrase(
     val id: Int,
     val eng: String,
     val rus: String,
-    val audio: String?
+    val audioEng: String? = null,
+    val audioRus: String? = null
 )

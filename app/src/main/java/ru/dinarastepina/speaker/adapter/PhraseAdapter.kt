@@ -8,9 +8,99 @@ import ru.dinarastepina.speaker.models.Phrase
 
 class PhraseAdapter : RecyclerView.Adapter<PhraseAdapter.PhraseViewHolder>() {
 
-    val data: List<Phrase> = emptyList()
+    val data: List<Phrase> = listOf(
+        Phrase(
+            id = 0,
+            eng = "Thank you!",
+            rus = "Спасибо!",
+            audioEng = "thankyou.mp3"
+        ),
+        Phrase(
+            id = 1,
+            eng = "Sorry!",
+            rus = "Простите!",
+            audioEng = "sorry.mp3"
+        ),
+        Phrase(
+            id = 2,
+            eng = "Bye!",
+            rus = "Пока!"
+        ),
+        Phrase(
+            id = 3,
+            eng = "Excuse me!",
+            rus = "Извините!"
+        ),
+        Phrase(
+            id = 0,
+            eng = "Thank you!",
+            rus = "Спасибо!",
+            audioEng = "thankyou.mp3"
+        ),
+        Phrase(
+            id = 1,
+            eng = "Sorry!",
+            rus = "Простите!",
+            audioEng = "sorry.mp3"
+        ),
+        Phrase(
+            id = 2,
+            eng = "Bye!",
+            rus = "Пока!"
+        ),
+        Phrase(
+            id = 3,
+            eng = "Excuse me!",
+            rus = "Извините!"
+        ),
+        Phrase(
+            id = 0,
+            eng = "Thank you!",
+            rus = "Спасибо!",
+            audioEng = "thankyou.mp3"
+        ),
+        Phrase(
+            id = 1,
+            eng = "Sorry!",
+            rus = "Простите!",
+            audioEng = "sorry.mp3"
+        ),
+        Phrase(
+            id = 2,
+            eng = "Bye!",
+            rus = "Пока!"
+        ),
+        Phrase(
+            id = 3,
+            eng = "Excuse me!",
+            rus = "Извините!"
+        ),
+        Phrase(
+            id = 0,
+            eng = "Thank you!",
+            rus = "Спасибо!",
+            audioEng = "thankyou.mp3"
+        ),
+        Phrase(
+            id = 1,
+            eng = "Sorry!",
+            rus = "Простите!",
+            audioEng = "sorry.mp3"
+        ),
+        Phrase(
+            id = 2,
+            eng = "Bye!",
+            rus = "Пока!"
+        ),
+        Phrase(
+            id = 3,
+            eng = "Excuse me!",
+            rus = "Извините!"
+        ),
 
-    class PhraseViewHolder(val vb: PhraseItemBinding): RecyclerView.ViewHolder(vb.root) {
+        )
+
+    class PhraseViewHolder(val vb: PhraseItemBinding) : RecyclerView.ViewHolder(vb.root) {
         fun bind(phrase: Phrase) {
             vb.phraseEng.text = phrase.eng
             vb.phraseRus.text = phrase.rus

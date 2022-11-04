@@ -19,6 +19,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/phrases_rv"
         android:padding="@dimen/small_padding"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_width="match_parent"
         tools:listitem="@layout/phrase_item"
         app:layout_constraintBottom_toBottomOf="parent"
