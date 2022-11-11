@@ -3,53 +3,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="@dimen/small_padding"
-    android:elevation="@dimen/small_padding"
-    android:layout_height="wrap_content">
+    android:elevation="@dimen/small_padding">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        app:cardElevation="20dp"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:cardElevation="20dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:background="@drawable/phrase_bg"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/phrase_bg">
 
             <TextView
                 android:id="@+id/phrase_eng"
-                android:padding="@dimen/small_padding"
                 android:layout_width="0dp"
-                android:gravity="center"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toStartOf="@id/barrier"
-                tools:text="Hello  hhhh  kkkkkkkkk ffffff!"
+                android:gravity="center"
+                android:padding="@dimen/small_padding"
                 android:textAppearance="@style/PhraseEngStyle"
+                app:layout_constraintEnd_toStartOf="@id/barrier"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Hello  hhhh  kkkkkkkkk ffffff!" />
 
             <View
                 android:id="@+id/barrier"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_width="1dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_height="wrap_content" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/phrase_rus"
                 android:layout_width="0dp"
-                android:gravity="center"
                 android:layout_height="match_parent"
-                tools:text="Привет! Привет! ggggggggggggggggggggggggggggggggg"
+                android:gravity="center"
                 android:padding="@dimen/small_padding"
-                app:layout_constraintStart_toEndOf="@id/barrier"
                 android:textAppearance="@style/PhraseRusStyle"
                 app:layout_constraintBottom_toBottomOf="@id/phrase_eng"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/phrase_eng" />
+                app:layout_constraintStart_toEndOf="@id/barrier"
+                app:layout_constraintTop_toTopOf="@id/phrase_eng"
+                tools:text="Привет! Привет! ggggggggggggggggggggggggggggggggg" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

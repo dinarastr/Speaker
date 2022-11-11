@@ -11,7 +11,7 @@ class PhraseAdapter : RecyclerView.Adapter<PhraseAdapter.PhraseViewHolder>() {
     val data: List<Phrase> = listOf(
         Phrase(
             id = 0,
-            eng = "Thank you!",
+            eng = "Thank you!\nThank you!\nThank you!",
             rus = "Спасибо!",
             audioEng = "thankyou.mp3"
         ),
@@ -117,6 +117,7 @@ class PhraseAdapter : RecyclerView.Adapter<PhraseAdapter.PhraseViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhraseViewHolder {
+        //todo: add different layout types
         val vb = PhraseItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return PhraseViewHolder(vb)
     }
