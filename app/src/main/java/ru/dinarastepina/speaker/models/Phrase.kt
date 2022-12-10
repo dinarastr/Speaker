@@ -8,7 +8,7 @@ data class Phrase(
     @PrimaryKey
     val id: Int,
     val eng: String,
-    val rus: String,
+    val rus: String? = null,
     val audioEng: String? = null,
     val audioRus: String? = null,
     val topic: String
